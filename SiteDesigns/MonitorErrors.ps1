@@ -1,3 +1,15 @@
+<#
+.SYNOPSIS
+  Logs errors from site design scripts 
+  
+.DESCRIPTION
+  https://social.technet.microsoft.com/wiki/contents/articles/53306.sharepoint-online-monitoring-site-script-errors.aspx
+  
+.OUTPUTS
+  Results stored in "C:\Users\Public\siteoutcomes.csv">
+#>
+
+
 $cred = Get-Credential -UserName ana@etr56.onmicrosoft.com -Message "Enter password"
 Connect-SPOService -Url "https://etr56-admin.sharepoint.com" -Credential $cred
 $CSVPath = "C:\Users\Public\siteoutcomes.csv"
