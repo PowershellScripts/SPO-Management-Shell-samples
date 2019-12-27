@@ -1,11 +1,26 @@
+<#
+.SYNOPSIS
+  Checks on what sites a site design is applied
+  
+.DESCRIPTION
+  https://social.technet.microsoft.com/wiki/contents/articles/53517.sharepoint-online-site-designs-verify-what-site-designs-are-applied-where.aspx
+  
+.OUTPUTS
+  
+.NOTES
+  Version:        1.0
+  Author:         Arleta Wanat
+  Creation Date:  2019 
+#>
 
 
 import-module microsoft.online.sharepoint.powershell
  
-#Connect-SPOService -Url https://etr56-admin.sharepoint.com
+Connect-SPOService -Url https://etr56-admin.sharepoint.com
  
 $AllSites = Get-SPOSite -Limit All
- 
+
+#Here all the search results will be stored 
 $AllAppliedDesigns = @()
  
 $AllSites | Foreach-Object{
