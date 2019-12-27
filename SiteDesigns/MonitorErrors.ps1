@@ -7,6 +7,11 @@
   
 .OUTPUTS
   Results stored in "C:\Users\Public\siteoutcomes.csv">
+
+.NOTES
+  Version:        1.0
+  Author:         Arleta Wanat
+  Creation Date:  2019 
 #>
 
 
