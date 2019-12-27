@@ -47,3 +47,7 @@ $AllSites | Foreach-Object{
 Write-host $AllAppliedDesigns.count
  
 $AllAppliedDesigns | sort SiteDesignID
+
+$SitesWithXYZSiteDesign = $AllAppliedDesigns | where {$_.SiteDesignID -eq "e76d1988-181f-4911-9f52-1759d5ee9220"}
+
+Write-Output $SitesWithXYZSiteDesign
