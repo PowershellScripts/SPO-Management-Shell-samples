@@ -14,7 +14,7 @@
 #>
 
 
-import-module microsoft.online.sharepoint.powershell
+Import-Module microsoft.online.sharepoint.powershell
  
 Connect-SPOService -Url https://etr56-admin.sharepoint.com
  
